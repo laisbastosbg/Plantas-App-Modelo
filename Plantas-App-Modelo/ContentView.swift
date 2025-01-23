@@ -9,20 +9,24 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-//        NavigationStack {
-            ScrollView(.horizontal) {
-                HStack(spacing: 25) {
-                    PlantOption(index: "I", title: "Manjericão", image: "Basil-PLACEHOLDER", buttonText: "Aprender")
-                    
-                    PlantOption(index: "II", title: "Coentro", image: "Coriander-PLACEHOLDER", buttonText: "Aprender")
-                    
-                    PlantOption(index: "III", title: "Cebolinha", image: "Scallions-PLACEHOLDER", buttonText: "Aprender")
+        NavigationStack {
+            ZStack {
+                Color("background")
+                ScrollView(.horizontal) {
+                    HStack(spacing: 25) {
+                        PlantOption(index: "I", title: "Manjericão", image: "Basil-PLACEHOLDER", buttonText: "Aprender")
+                        
+                        PlantOption(index: "II", title: "Coentro", image: "Coriander-PLACEHOLDER", buttonText: "Aprender")
+                        
+                        PlantOption(index: "III", title: "Cebolinha", image: "Scallions-PLACEHOLDER", buttonText: "Aprender")
+                    }
+                    .scrollTargetLayout()
                 }
-                .scrollTargetLayout()
+                .scrollIndicators(.hidden)
+                .scrollTargetBehavior(.viewAligned)
             }
-//            .contentMargins(50, for: .scrollContent)
-            .scrollTargetBehavior(.viewAligned)
-//        }
+            .ignoresSafeArea()
+        }
     }
 }
 
@@ -41,17 +45,20 @@ struct PlantOption: View {
             Text(index)
                 .font(.largeTitle)
                 .bold()
+                .foregroundStyle(Color("primary"))
             Text(title)
                 .font(.title)
+                .foregroundStyle(Color("primary"))
             Image(image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: UIScreen.main.bounds.width - 50)
             Button(action: {}, label: {
                 Text(buttonText)
+                    .foregroundStyle(Color("primary"))
             })
             .padding()
-            .border(.accent)
+            .border(Color("primary"))
         }
         .padding()
         .scrollTransition { content, phase in
