@@ -1,0 +1,49 @@
+[
+  {
+    "name": "Manjericão",
+    "plant_information": "O manjericão é uma planta aromática amplamente utilizada na culinária e conhecida por seus benefícios medicinais. Originário da Índia, ele se adaptou a diferentes regiões e é fácil de cultivar em casa.",
+    "cultivation_tips": ["Escolha um local ensolarado, com no mínimo 6 horas de luz solar diária.", "Mantenha o solo sempre úmido, mas evite encharcá-lo.", "Pode as folhas regularmente para estimular o crescimento."],
+    "trivia": ["O manjericão é um excelente repelente natural de insetos.", "Suas folhas possuem propriedades anti-inflamatórias."],
+    "soil_information": "Para o cultivo do manjericão, é essencial um solo rico em nutrientes e bem drenado. Uma mistura de terra vegetal e húmus de minhoca é ideal.",
+    "soil_enhancement_tips": ["Adicione cascas de ovo trituradas para fornecer cálcio.", "Revolva o solo a cada 15 dias para oxigenação.", "Evite o uso de fertilizantes químicos."],
+    "draining_test": "Plante em um vaso com furos no fundo e observe se a água escorre livremente após a rega.",
+    "tools_information": "Reutilize objetos domésticos, como colheres antigas e potes de sorvete, como ferramentas improvisadas.",
+    "essential_tools": ["Pazinha de jardinagem: para plantar e replantar mudas.", "Regador: para manter a rega uniforme.", "Tesoura de poda: para aparar folhas e ramos.", "Luvas: para proteger as mãos durante o manuseio do solo."],
+    "climate_information": "O manjericão prefere climas quentes e úmidos, com temperaturas entre 20°C e 30°C. Evite expô-lo a geadas ou temperaturas muito baixas.",
+    "plant_protection": ["Use estufas improvisadas ou proteções plásticas em dias frios.", "Evite exposição direta ao vento forte.", "Durante o verão, regue com maior frequência."],
+    "location_adaptation": "Mesmo em regiões mais frias, é possível cultivar o manjericão dentro de casa, próximo a uma janela bem iluminada.",
+    "image": "basil.png"
+  },
+  {
+      "name": "Coentro",
+      "plant_information": "O coentro é uma erva aromática amplamente utilizada na culinária mundial, especialmente em pratos asiáticos, mexicanos e indianos. Suas folhas e sementes são comestíveis, possuindo um sabor marcante.",
+      "cultivation_tips": ["Plante em um local com boa iluminação, mas evite sol excessivo.", "Regue regularmente, mantendo o solo levemente úmido.", "Evite transplantar, pois o coentro não gosta de mudanças de local."],
+      "trivia": ["As sementes de coentro são chamadas de coriandro e possuem um sabor distinto das folhas.", "O coentro pode ajudar na digestão e tem propriedades antioxidantes."],
+      "soil_information": "O solo ideal para o coentro deve ser leve, bem drenado e rico em matéria orgânica. Misturas com areia e composto orgânico são recomendadas.",
+      "soil_enhancement_tips": ["Use borra de café para enriquecer o solo com nitrogênio.", "Evite solos muito compactos, revolvendo a terra regularmente.", "Prefira fertilizantes orgânicos para manter a qualidade do solo."],
+      "draining_test": "Ao regar, observe se a água se acumula na superfície ou se infiltra rapidamente. Se demorar muito para absorver, pode ser necessário melhorar a drenagem.",
+      "tools_information": "Ferramentas caseiras podem facilitar o cultivo do coentro, como palitos de sorvete para marcar fileiras no solo.",
+      "essential_tools": ["Ancinho pequeno: para preparar o solo.", "Regador de bico fino: para uma rega mais delicada.", "Tesoura pequena: para colher folhas sem danificar a planta.", "Vasos com drenagem: caso queira cultivar em recipientes."],
+      "climate_information": "O coentro prefere temperaturas amenas, entre 18°C e 25°C. Pode ser cultivado tanto em ambientes externos quanto internos, desde que receba boa iluminação.",
+      "plant_protection": ["Em dias muito quentes, proteja a planta com sombrite.", "Evite o excesso de umidade para prevenir fungos.", "Monitore pragas como pulgões e lagartas."],
+      "location_adaptation": "Se cultivado em vasos, posicione próximo a janelas ensolaradas ou utilize lâmpadas de crescimento para suplementação de luz.",
+      "image": "cilantro.png"
+  },
+
+  {
+      "name": "Cebolinha",
+      "plant_information": "A cebolinha é uma erva versátil, usada para temperar pratos e decorar alimentos. Seu cultivo é fácil e pode ser realizado tanto em vasos quanto no solo.",
+      "cultivation_tips": ["Pode ser cultivada a partir de sementes ou rebrotação das raízes.", "Prefere locais ensolarados, mas tolera sombra parcial.", "Regue com frequência, mantendo o solo úmido, mas sem encharcar."],
+      "trivia": ["A cebolinha pertence à mesma família do alho e da cebola.", "Pode ser colhida continuamente, cortando as folhas próximas à base."],
+      "soil_information": "O solo ideal deve ser rico em matéria orgânica e bem drenado. Uma mistura de terra vegetal e areia pode ajudar a evitar o acúmulo de água.",
+      "soil_enhancement_tips": ["Adicione húmus de minhoca para maior fertilidade.", "Evite solos muito ácidos; misturar cinzas de madeira pode ajudar a equilibrar o pH.", "Aplique cobertura morta para reter a umidade do solo."],
+      "draining_test": "Após regar, observe se a água drena rapidamente. Caso o solo fique encharcado por muito tempo, pode ser necessário adicionar areia ou perlita para melhorar a drenagem.",
+      "tools_information": "O cultivo da cebolinha pode ser facilitado com o uso de ferramentas simples e acessíveis.",
+      "essential_tools": ["Tesoura de poda: para colher as folhas sem danificar a planta.", "Regador pequeno: para controle preciso da umidade.", "Pá de mão: para preparar o solo antes do plantio.", "Vasos e recipientes: para cultivo indoor ou espaços pequenos."],
+      "climate_information": "A cebolinha se adapta bem a climas amenos, com temperaturas entre 15°C e 25°C. Suporta variações, mas pode sofrer com geadas intensas.",
+      "plant_protection": ["Em climas muito frios, proteja com estufas caseiras ou leve os vasos para dentro de casa.", "Evite encharcamento para prevenir apodrecimento das raízes.", "Monitore pragas como pulgões e trips, removendo manualmente se necessário."],
+      "location_adaptation": "A cebolinha pode ser cultivada em vasos dentro de casa, desde que receba luz suficiente. Um peitoril de janela ensolarado é um ótimo local.",
+      "image": "scallions.png"
+  }
+
+]

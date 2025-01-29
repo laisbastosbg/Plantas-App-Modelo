@@ -14,11 +14,11 @@ struct ContentView: View {
                 Color("background")
                 ScrollView(.horizontal) {
                     HStack(spacing: 25) {
-                        PlantOption(index: "I", title: "Manjericão", image: "Basil-PLACEHOLDER", buttonText: "Aprender")
+                        PlantOption(index: "I", title: "Manjericão", image: "basil", buttonText: "Aprender")
                         
-                        PlantOption(index: "II", title: "Coentro", image: "Coriander-PLACEHOLDER", buttonText: "Aprender")
+                        PlantOption(index: "II", title: "Coentro", image: "cilantro", buttonText: "Aprender")
                         
-                        PlantOption(index: "III", title: "Cebolinha", image: "Scallions-PLACEHOLDER", buttonText: "Aprender")
+                        PlantOption(index: "III", title: "Cebolinha", image: "scallions", buttonText: "Aprender")
                     }
                     .scrollTargetLayout()
                 }
