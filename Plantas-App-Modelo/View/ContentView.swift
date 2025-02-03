@@ -9,28 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationStack {
-            ZStack {
-                Color("background")
-                ScrollView(.horizontal) {
-                    HStack(spacing: 25) {
-                        PlantOption(index: "I", title: "Manjericão", image: "basil", buttonText: "Aprender")
-                        
-                        PlantOption(index: "II", title: "Coentro", image: "cilantro", buttonText: "Aprender")
-                        
-                        PlantOption(index: "III", title: "Cebolinha", image: "scallions", buttonText: "Aprender")
+        ZStack {
+            Color("background")
+            NavigationStack {
+                    ScrollView(.horizontal) {
+                        HStack(spacing: 25) {
+                            PlantOption(index: "I", title: "Manjericão", image: "basil", buttonText: "Aprender", destination: PlantInfo())
+                            
+                            PlantOption(index: "II", title: "Coentro", image: "cilantro", buttonText: "Aprender", destination: EmptyView())
+                            
+                            PlantOption(index: "III", title: "Cebolinha", image: "scallions", buttonText: "Aprender", destination: EmptyView())
+                        }
+                        .scrollTargetLayout()
                     }
-                    .scrollTargetLayout()
-                }
-                .scrollIndicators(.hidden)
-                .scrollTargetBehavior(.viewAligned)
+                    .scrollIndicators(.hidden)
+                    .scrollTargetBehavior(.viewAligned)
+                .ignoresSafeArea()
             }
-            .ignoresSafeArea()
         }
     }
 }
 
-struct PlantOption: View {
+struct PlantOption<Destination: View>: View {
     
     var index: String
     
@@ -39,6 +39,8 @@ struct PlantOption: View {
     var image: String
     
     var buttonText: String
+    
+    var destination: Destination
     
     var body: some View {
         VStack {
@@ -53,12 +55,12 @@ struct PlantOption: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: UIScreen.main.bounds.width - 50)
-            Button(action: {}, label: {
+            NavigationLink(destination: destination) {
                 Text(buttonText)
                     .foregroundStyle(Color("primary"))
-            })
-            .padding()
-            .border(Color("primary"))
+                    .padding()
+                    .border(Color("primary"))
+            }
         }
         .padding()
         .scrollTransition { content, phase in
